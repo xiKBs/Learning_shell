@@ -70,6 +70,8 @@ if (( ! a ))
 then
     echo "a is zero"
 fi
+#or
+if (( ! ( a < 1 && b < 1 ) ));then echo "gotch you";fi
 
 
 
