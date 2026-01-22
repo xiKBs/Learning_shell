@@ -100,4 +100,8 @@ if (( ! ( a < 1 && b < 1 ) ));then echo "gotch you";fi
 # -w file writable
 # -x file executable
 
-
+#we can also use commands comparision
+if [ "$(uname)" == "Linux" ]
+then
+	echo "Welcome to Linux"
+fi
