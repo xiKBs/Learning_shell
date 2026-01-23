@@ -54,8 +54,10 @@ fi
 if [ ! -f file.txt ]
 then
     echo "File not found"
-fi  #! must be outside the test ✔ It negates the exit status
-
+fi 
+#! must be outside the test ✔ It negates the exit status
+#it has two operator work inside -o stands for 'or' and 
+#-a stands for 'and'.
 
 #5️⃣ Using Logical Operators in Arithmetic (( ))
 a=5
