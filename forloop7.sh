@@ -70,6 +70,8 @@ do
 done
 
 #break and continue works same as python and other language
+#but there is a catch in syntax
+[[ $n -lt 0 ]] && continue  #&& should be
 
 #How Bash Actually Expands a for Loop (VERY IMPORTANT)
 #Bash processes a for loop in this exact order:
