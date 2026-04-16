@@ -166,4 +166,22 @@ Bash: grep "[0-9]" file.txt
     [[:alpha:]]
     → same as [a-zA-Z]
 
-    
+    8.Plus (+):
+    "Match the previous character (or group) one or more times"
+
+    9.optional('?'):-
+    "Match the previous character 0 or 1 time"
+    ✅ Example:
+    Regex: colou?r
+    Matches:
+    ✅ color
+    ✅ colour
+    ❌ Not match:
+    colouur (more than 1 u)
+    👉 Because u? = optional
+
+    10.Difference: +, *, ?
+    Symbol              Meaning
+    +                   1 or more 
+    *                   0 or more
+    ?                   0 or 1 
