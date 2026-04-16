@@ -73,7 +73,23 @@ output: Shows 2 lines BEFORE + 2 lines AFTER + matched
 
 
 
-#5️⃣Regular Expressions (CORE POWER)
+#5️⃣Use multiple patterns:
+Bash: grep -e "cat" -e "dog" file.txt 
 
-📌Dot (.)
-  
+
+#6️⃣From file:
+Bash: grep -f patterns.txt file.txt
+👉 patterns.txt contains:
+cat
+dog
+bird
+
+#7️⃣Performance Optimization
+Use fixed string (fast):
+Bash: grep -F "hello" file.txt
+👉 No regex → faster
+
+#8️⃣Find empty lines:
+Bash: grep "^$" file.txt
+
+
