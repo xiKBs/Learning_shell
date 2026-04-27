@@ -184,4 +184,40 @@ Bash: grep "[0-9]" file.txt
     Symbol              Meaning
     +                   1 or more 
     *                   0 or more
-    ?                   0 or 1 
+    ?                   0 or 1
+
+
+
+
+#4️⃣curly braces in regex:
+
+    # Basic Syntax: a{n}
+    👉 Matlab: exactly n times repeat hona chahiye(pattern a)
+    Example: a{3}
+    ✔ Matches: aaa
+    ❌ Not match: aa, aaaa
+
+
+    1.Range (Minimum to Maximum)
+    bash: a{n,m}
+    👉 Matlab: kam se kam n aur zyada se zyada m baar
+    Example: a{2,4}
+    ✔ Matches: aa, aaa, aaaa
+    ❌ Not match: a, aaaaa
+
+    2.Minimum Only
+    bash: a{n,}
+    👉 Matlab: at least n times (upper limit nahi hai)
+    Example: a{3,}
+    ✔ Matches: aaa, aaaa, aaaaaaa
+    ❌ Not match: aa
+
+    3.Maximum Only:
+    bash a{0,m}
+    📌Highest m times match hona chahiye
+
+    🧠 Short Summary
+     {n} → exact count
+     {n,m} → range
+     {n,} → minimum
+     {0,m} → maximum limit
